@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>nkkn</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/JSApplication/RemoteDatabase/style.css'>
+0
+    
+</head>
+<body>
+    <div id="login-container">
+        <form>
+            <div>
+            <label for="email">Email</label>
+            <input type="text" id="email"/>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="text" type="password" id="password"/>
+            </div>
+            <div id="generic-login-error" class="error"></div>
+            <button id="login-btn" type="button">Login</button>
+        </form>
+    </div>
+    <div id="app-container" class="hidden">
+        You are logged
+    </div>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBGcvuUi1M9HDexzkCgc4X1Hdv70oTDisw",
+    authDomain: "test-app-8e8f4.firebaseapp.com",
+    databaseURL: "https://test-app-8e8f4.firebaseio.com",
+    projectId: "test-app-8e8f4",
+    storageBucket: "test-app-8e8f4.appspot.com",
+    messagingSenderId: "977100859791",
+    appId: "1:977100859791:web:b6bbca54fec84cff2143fa",
+    measurementId: "G-PRMVDFKSKT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script src='/JSApplication/RemoteDatabase/index.js'></script>
+</body>
+</html>
