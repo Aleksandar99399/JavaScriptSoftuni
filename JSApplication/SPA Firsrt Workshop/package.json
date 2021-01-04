@@ -9,5 +9,11 @@
         "handlebars": "4.7.6",
         "jquery": "^3.4.0",
         "sammy": "0.7.6"
+    },
+    "devDependencies": {
+        "lite-server": "^2.6.1"
+    },
+    "scripts": {
+        "dev": "lite-server"
     }
 }
